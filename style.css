@@ -1,0 +1,181 @@
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.aboutPage {
+    display: none;
+}
+body {
+    overflow-x: hidden;
+    background-color: #19458c;
+}
+nav {
+    width: 100vw;
+    height: 80px;
+    background-color: #19458c;
+    font-size: 30px;
+    color: #fff;
+}
+nav ul, nav ul li {
+    list-style: none;
+}
+nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10%;
+}
+nav ul li {
+    padding: 25px 45px;
+    opacity: 0.8;
+}
+nav ul li img {
+    width: 32px;
+    height: auto;
+}
+nav ul li:hover {
+    opacity: 1;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.main {
+    background-color: #33496d;
+    color: #eee;
+    width: 100%;
+    min-height: 80vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    background-color: #eee;
+    margin: 25px;
+    border-radius: 10px;
+    color: #020202;
+    width: 70%;
+    height: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 5px #33599d;
+}
+.box h1 {
+    font-size: 32px;
+    font-weight: 200;
+    text-align: center;
+    margin: 15px 0;
+}
+.box h3 {
+    margin: 15px 0;
+    font-size: 26px;
+    font-weight: 100;
+    text-align: center;
+}
+input[type="text"] {
+    border-radius: 10px;
+    border-color: #33496d;
+    padding: 10px 20px;
+}
+.form {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+.form input {
+    width: 30vw;
+}
+.form button {
+    background-color: #33496d;
+    color: #fff;
+    opacity: 0.8;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.form button:hover {
+    opacity: 1;
+    transition: 0.25s;
+}
+footer {
+    width: 100vw;
+    height: 100px;
+    background-color: #19458c;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+footer p, footer a {
+    margin: 10px;
+}
+.responseText {
+    display: none;
+}
+.aboutPage {
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content { 
+     background-color: #fefefe;
+     margin: auto;
+     padding: 20px;
+     border: 1px solid: #888;
+     width: 80%;
+}
+.modal-content h2 { 
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+.modal-content p {
+    font-size: 16px;
+    margin-left: 45px;
+    margin-top: 10px;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.response {
+    width: 50%;
+    height: 100px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.response #responseUser {
+  align-self: flex-end;
+  margin-right: 10px;
+  color: #1DA1F2;
+}
+.response #responseText {
+    margin: 5px 10px;
+}
+@media screen and (max-width: 800px) {
+    .response {
+        width: 90%;
+    }
+}

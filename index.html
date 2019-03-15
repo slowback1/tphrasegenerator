@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Twitter Phrase Generator</title>
+    </head>
+    <body>
+        <div id="aboutPage" class="aboutPage">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>About This</h2>
+                <p>This webpage takes your input for of one user's Twitter handle and outputs a sentence/phrase that that Twitter handle would say.</p>
+                <p>This is done with just simple HTML/CSS/Javascript in the front end, and a simple Node.js server in the backend for processing.</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li id="aboutTrigger"><p>About</p></li>
+            </ul>
+        </nav>
+        <div class="main">
+            <div class="box">
+                <h1>Twitter Phrase Generator</h1>
+                <h3>Enter a Twitter handle (an "@") below, and it will generate a sentence that handle would say.</h3>
+            <div class="form">
+                <input type="text" id="handle" placeholder="Enter Twitter handle here" />
+                <button id="handleSubmit">Generate</button>
+            </div>
+            <div class="response">
+                <p id="responseText"></p>
+                <p id="responseUser"></p>
+            </div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2019 Andrew Wobeck</p>
+            <a href="">GitHub Repo</a>
+        </footer>
+    </body>
+    <script src="script.js"></script>
+</html>
